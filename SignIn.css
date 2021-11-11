@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+@font-face{
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Raleway-Medium";
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face{
+    font-family: "Raleway-ExtraBold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face{
+    font-family: "Raleway-Bold";
+    src: url(..fonts/Raleway-Bold.ttf);
+    
+}
+
+
+@font-face{
+    font-family: "Raleway-Semibold";
+    src: url(../fonts/Raleway-Semibold.ttf);
+}
+
+@font-face{
+    font-family: "Raleway-Black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-smoothing:antialiased;
+    font-family: "Raleway-Regular";
+    color: #fefefe;
+    height: 100%;
+    width: 100%;
+}
+
+
+header.top-bar{
+    background: #171717;
+    padding: 8px;
+}
+
+header.top-bar .logo a img{
+    width: 250px;
+    height: 50px;
+    margin-left: 15px;
+    justify-content: left;
+}
+
+.body{
+    display: flex;
+    width: 100%;
+    background: #000000;
+}
+
+.navigation{
+    justify-content: space-between;
+    width: 20%;
+    padding: 10px;
+    background: #171717;
+    display: block;
+}
+
+.navigation .navigation-bar a{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: "Raleway-bold";
+    color: #faf1f1;
+    font-size: 20px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.navigation .navigation-bar a img{
+    width: 40px;
+    height: 30px;
+    margin-right: 28px;
+    margin-top: 8px;
+}
+
+.navigation .navigation-bar a:hover{
+    background: #454545;
+    width: 100%;
+}
+
+.navigation .social-bar a{
+    display: flex;
+    display: inline-block;
+    margin-top: 70px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.navigation .social-bar a img{
+    padding-right: 15px;
+    width: 50px;
+    height: 40px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: rgb(17, 13, 13);
+    color: rgb(14, 11, 11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(43, 41, 41, 0.384);
+    perspective: 1000px;
+}
+
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: ease 1.5s;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 208, 0, 0.603),rgba(226, 222, 3, 0.671)),url(background.jpg); 
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.card h2{
+    font-weight: normal;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 3px solid #000000;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #000000;
+}
+
+::placeholder{
+    color: #000000;
+    font-size: 12px;
+}
+
+button{
+    width: 100%;
+    background: transparent;
+    border: 3px solid #000000;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.submit-btn{
+    position: relative;
+}
+
+.submit-btn::after{
+    content: '\27a4';
+    color: #333;
+    line-height: 32px;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #000000;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+
+span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.card .btn{
+    margin-top: 70px;
+}
+
+.card a{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+}

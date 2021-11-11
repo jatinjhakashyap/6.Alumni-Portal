@@ -1,0 +1,130 @@
+/* fonts */
+@font-face{
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Raleway-Medium";
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face{
+    font-family: "Raleway-ExtraBold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face{
+    font-family: "Raleway-Bold";
+    src: url(..fonts/Raleway-Bold.ttf);
+    
+}
+
+
+@font-face{
+    font-family: "Raleway-Semibold";
+    src: url(../fonts/Raleway-Semibold.ttf);
+}
+
+@font-face{
+    font-family: "Raleway-Black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-smoothing:antialiased;
+    font-family: "Raleway-Regular";
+    color: #fefefe;
+    height: 100%;
+}
+
+
+header.top-bar{
+    background: #171717;
+    padding: 8px;
+}
+
+header.top-bar .logo a img{
+    width: 250px;
+    height: 50px;
+    margin-left: 15px;
+    justify-content: left;
+}
+
+.body{
+    display: flex;
+    width: 100%;
+    background: #000000;
+}
+
+.navigation{
+    justify-content: space-between;
+    width: 16%;
+    padding: 10px;
+    background: #171717;
+    display: block;
+}
+
+.navigation .navigation-bar a{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: "Raleway-bold";
+    color: #faf1f1;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 1s ease;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.navigation .navigation-bar a img{
+    width: 40px;
+    height: 30px;
+    margin-right: 28px;
+    margin-top: 8px;
+}
+
+.navigation .navigation-bar a:hover{
+    border-radius: 5px;
+    background: #454545;
+    width: 100%;
+}
+.navigation .social-bar{
+    margin-top: 0px;
+}
+
+.navigation .social-bar a{
+    display: flex;
+    display: inline-block;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.navigation .social-bar a img{
+    padding-right: 15px;
+    width: 50px;
+    height: 40px;
+}
+
+.body .tab{
+    color: #fefefe;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 125px;
+}
+
+.body .tab table, td, th{
+    border: 2px solid #fefefe;
+}
